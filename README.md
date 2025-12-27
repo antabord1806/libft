@@ -6,48 +6,51 @@ Creating a C library that will be used in future projects.
 
 ## function breakdown
 
-ft_atoi - converting a char in a int;
-ft_bzero - writes bytes 0 in a specific location in the memory;
-ft_calloc - alocates memory and intializes it, setting all its bytes to 0;
-ft_isalnum - checks if the argument is alphanumeric (a-z)(A-Z) or (0-9);
-ft_isalpha - checks if argument is alphabetical;
-ft_isascii - checks if argument is in the ASCII intreval (0-127);
-ft_isdigit - checks if argument is a digit ('0' - '9');
-ft_isprint - checks if argument is a printable character (36 - 126);
-ft_itoa - converts an integer into a string;
-ft_lstadd_back - adds a new node to the end of a linked list;
-ft_lstadd_front - adds a new node the begging of a linked list;
-ft_lstclear - frees a linked list;
-ft_delone - frees a single node of the liked list;
-ft_lstiter - executes a function on the content of each node;
-ft_lstlast - finds the last node of a linked list;
-ft_lstmap - replaces each node for the result of the function executed for the content of each one, effectivly creating a new linked list;
-ft_lstnew - adds a new node to the linked list;
-ft_lstsize - returns the size of a linked list;
-ft_memchr - searches in a specific location of memory for a the first occurence of a certain element;
-ft_memcmp - compares a certain numbers of bytes of 2 memory locations;
-ft_memset - fills a certain block of memory with the same byte;
-ft_memcpy - copies the bytes from a certain block of memory;
-ft_memmove - copies the bytes from a cetain memory block to another while handling overlap;
-ft_putchar_fd - writes a char in a specified file descriptor;
-ft_putend_fd - writes a line to a specified files descriptor;
-ft_putnbr_fd - writes the conversion from int to char to a specified file descriptor;
-ft_putstr_fd - writes a string to a specified file descriptor;
-ft_split - creates an array from a string delimiter;
-ft_strchr - finds the first instance of a delimiter;
-ft_strdup - alocates memory, copies str to that memory and returns the pointer to the new string;
-ft_striteri - executes a function for each char of a string;
-ft_strjoin - creates a new string by joining 2 others and alocating;
-ft_strlcat - concatenates 2 strings in certain size;
-ft_strlcpy - copies one string to a limited sized buffer;
-ft_strlen - returns the size f a string;
-ft_strmapi - replaces each char in a string for its modified version efectivly creating a new string and returning its pointer;
-ft_strncmp - compares each chararcter of 2 strings;
-ft_strnstr - finds a string inside another and returns the pointer to the first matching instance;
-ft_strtrim - removes characters from the start and end of a string form a specified set;
-ft_strrchr - finds the last instance of a delimiter;
-ft_substr - creates a string inside another;
-ft_tolower - converts all alphabetical char into lowrcase;
-ft_toupper - converts all alphabetical char into uppercase;
+# Libft Function Breakdown
 
+| Function | Description |
+|----------|------------|
+| [ft_atoi](./ft_atoi.c) | Converts a string to an integer |
+| [ft_bzero](./ft_bzero.c) | Writes bytes 0 in a specific memory location |
+| [ft_calloc](./ft_calloc.c) | Allocates memory and initializes all bytes to 0 |
+| [ft_isalnum](./ft_isalnum.c) | Checks if the argument is alphanumeric (a-z, A-Z, 0-9) |
+| [ft_isalpha](./ft_isalpha.c) | Checks if the argument is alphabetical |
+| [ft_isascii](./ft_isascii.c) | Checks if the argument is in the ASCII range (0-127) |
+| [ft_isdigit](./ft_isdigit.c) | Checks if the argument is a digit ('0' - '9') |
+| [ft_isprint](./ft_isprint.c) | Checks if the argument is a printable character (32 - 126) |
+| [ft_itoa](./ft_itoa.c) | Converts an integer into a string |
+| [ft_lstadd_back](./ft_lstadd_back.c) | Adds a new node at the end of a linked list |
+| [ft_lstadd_front](./ft_lstadd_front.c) | Adds a new node at the beginning of a linked list |
+| [ft_lstclear](./ft_lstclear.c) | Frees a linked list |
+| [ft_lstdelone](./ft_lstdelone.c) | Frees a single node of a linked list |
+| [ft_lstiter](./ft_lstiter.c) | Executes a function on the content of each node |
+| [ft_lstlast](./ft_lstlast.c) | Finds the last node of a linked list |
+| [ft_lstmap](./ft_lstmap.c) | Creates a new linked list by applying a function to each node’s content |
+| [ft_lstnew](./ft_lstnew.c) | Creates a new node for a linked list |
+| [ft_lstsize](./ft_lstsize.c) | Returns the size of a linked list |
+| [ft_memchr](./ft_memchr.c) | Searches a memory block for the first occurrence of a byte |
+| [ft_memcmp](./ft_memcmp.c) | Compares a number of bytes between two memory blocks |
+| [ft_memset](./ft_memset.c) | Fills a memory block with the same byte |
+| [ft_memcpy](./ft_memcpy.c) | Copies bytes from one memory block to another |
+| [ft_memmove](./ft_memmove.c) | Copies bytes safely between memory blocks, handling overlap |
+| [ft_putchar_fd](./ft_putchar_fd.c) | Writes a character to a file descriptor |
+| [ft_putendl_fd](./ft_putendl_fd.c) | Writes a string followed by a newline to a file descriptor |
+| [ft_putnbr_fd](./ft_putnbr_fd.c) | Writes an integer to a file descriptor |
+| [ft_putstr_fd](./ft_putstr_fd.c) | Writes a string to a file descriptor |
+| [ft_split](./ft_split.c) | Splits a string into an array using a delimiter |
+| [ft_strchr](./ft_strchr.c) | Finds the first occurrence of a character in a string |
+| [ft_strdup](./ft_strdup.c) | Allocates memory, copies a string, and returns a pointer to it |
+| [ft_striteri](./ft_striteri.c) | Applies a function to each character of a string in place |
+| [ft_strjoin](./ft_strjoin.c) | Creates a new string by joining two strings |
+| [ft_strlcat](./ft_strlcat.c) | Concatenates two strings up to a given buffer size |
+| [ft_strlcpy](./ft_strlcpy.c) | Copies a string into a buffer of limited size |
+| [ft_strlen](./ft_strlen.c) | Returns the length of a string |
+| [ft_strmapi](./ft_strmapi.c) | Creates a new string by applying a function to each character of a string |
+| [ft_strncmp](./ft_strncmp.c) | Compares the first n characters of two strings |
+| [ft_strnstr](./ft_strnstr.c) | Finds a substring within a string and returns the pointer to the first match |
+| [ft_strtrim](./ft_strtrim.c) | Removes characters from the start and end of a string based on a set |
+| [ft_strrchr](./ft_strrchr.c) | Finds the last occurrence of a character in a string |
+| [ft_substr](./ft_substr.c) | Creates a substring from a given string |
+| [ft_tolower](./ft_tolower.c) | Converts an alphabetical character to lowercase |
+| [ft_toupper](./ft_toupper.c) | Converts an alphabetical character to uppercase |
 
