@@ -6,8 +6,6 @@ Creating a C library that will be used in future projects.
 
 ## function breakdown
 
-# Libft Function Breakdown
-
 | Function | Description |
 |----------|------------|
 | [ft_atoi](./ft_atoi.c) | Converts a string to an integer |
