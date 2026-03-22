@@ -1,6 +1,6 @@
 # Libft
 
-<p align="center">
+<p>
   <img src="https://img.shields.io/badge/Language-C-blue?style=for-the-badge&logo=c"/>
   <img src="https://img.shields.io/badge/School-42-black?style=for-the-badge"/>
   <img src="https://img.shields.io/badge/Unix-System-orange?style=for-the-badge&logo=linux"/>
